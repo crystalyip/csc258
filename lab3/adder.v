@@ -8,7 +8,7 @@ module adder_Mod(a, b, cin, s, cout);
 	input [3:0] a;
 	input [3:0] b;
 	input cin;
-	output [3:0] s; 
+	output [3:0] s; // the sum
 	output cout; 
 	wire W1;
 	wire W2;
@@ -23,7 +23,7 @@ module full_adder (A, B, cin, s, cout);
 	input A; 
 	input B; 
 	input cin; 
-	output s; 
+	output s; // the sum
 	output cout; 
 	assign s = (A&~B&~cin) | (~A&~B&cin) | (A&B&cin) | (~A&B&~cin); 
 	assign cout = (A&cin) | (A&B) | (B&cin); 
